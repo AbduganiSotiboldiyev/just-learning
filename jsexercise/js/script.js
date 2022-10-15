@@ -17,4 +17,4 @@
 const channel = prompt("Who is your favourite youtuber?", "ex:ulugbeksamigjanov");
 const youtuber = `https://youtube.com/${channel}/videos`;
 document.getElementById('demo').innerHTML = `My favourite youtober is: ${youtuber}`;
-console.log(youtuber)
+console.log(youtuber);
