@@ -1,0 +1,13 @@
+vs extensions 
+1) All Autocomplete
+2)Auto close tag
+3)Auto rename tag
+4)Prettier code Formater
+6)Java script ES-6
+7)Live server
+8)VS code icons
+9)brackets Pair Colorizer
+10)Code runner
+11)JSHint
+I have to install all extensions above 
+than run that code on terminal npm install -g jshint

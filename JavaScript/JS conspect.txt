@@ -1,0 +1,27 @@
+                                                   O'ZGARUVCHILAR VA ULARNI E'LON QILISH
+
+JS da o'zgaruvchilarni e'lon qilishni 3xil usulda amalga oshiriladi.
+1)let - bu method orqali e'lon qilingan o'zgaruvchilarni keyinchalik o'zgartirish imkoni bor va block hisoblanadi
+2) const - ozgartirish mumkin bo'lmagan o'zgaruvchilarni e'lon qilayotgan vaqtda ishlatilinadi
+3)var -let bilan bir xil lekin block hisoblanmaydi va juda ham eski versiya hisoblanadi
+
+					            QATIY REJIM
+
+" use strict " eski kodlarni ishlatib qoyishni oldini olish va faqat yangi rejimdagi kodlar bilan ishlash uchun ishlatilinadi.
+
+						Javascript Data types
+
+primitive:(Boolean,Null,Undefined,Number,String,Symbol)
+object(Array,Object,regex,date,function)
+
+						Foydalanuvchi bilan muloqot
+
+alert(" smth ") - smth shows on the top when you enter web page/smth happen(alerts us)
+comfirm("question", "") - yes or not(you have to comfirm that)
+prompt("question"," ") - have  answer to questions
+
+	
+						Interpolatsiya
+
+` ` -shunday qo'shtirnoqlar orqali hosil qilinadi.It helps to use variables inside brikets ` smth ${ variablename } `
+												
