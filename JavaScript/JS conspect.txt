@@ -1,4 +1,5 @@
-                                                   O'ZGARUVCHILAR VA ULARNI E'LON QILISH
+                                                Javascriptni boshladim: 12.10.2022   
+						 O'ZGARUVCHILAR VA ULARNI E'LON QILISH
 
 JS da o'zgaruvchilarni e'lon qilishni 3xil usulda amalga oshiriladi.
 1)let - bu method orqali e'lon qilingan o'zgaruvchilarni keyinchalik o'zgartirish imkoni bor va block hisoblanadi
