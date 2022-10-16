@@ -2,13 +2,7 @@
 
 const numberOFSeries = +prompt("How many movies have you watched?", "");
 
-if (numberOFSeries < 5){
-    console.log("You have to watch at least 5 movies.");
-} else if( numberOFSeries >= 5 && numberOFSeries <=10){
-    console.log("You have to watch at most 10 movies.");
-} else {
-    console.log("You have to watch more than 10 movies.");
-}
+
 const seriesDB = {
 
     count : numberOFSeries,
@@ -19,19 +13,32 @@ const seriesDB = {
 
 };
 
-let name1 = prompt("What is the name of movie that has been watched? " ),
-    score1 = +prompt(" How do you like it?" , '10 out of ?'),
-    name2 = prompt("What is the name of movie that has been watched?"),
-    score2 = +prompt(" How do you like it?" , '10 out of ?');
 
-while( name1.length <= 0 && name2.length <= 0) {
-    name1 = prompt("What is the name of movie that has been watched? " );
-    name2 = prompt("What is the name of movie that has been watched? ");
+
+for (let i = 0; i < 2; i++) {
+    const  name1 = prompt("What is the name of movie that has been watched? " ),
+           score1 = +prompt(" How do you like it?" , '10 out of ?');
+
+    if ( name1 != null && name1 != "" && score1 != null && score1 != ""){
+        seriesDB.series[name1] = score1;
+        console.log('done!');
+    } else {
+        console.log('error!');
+        i--;
+    }
 
 }
 
-seriesDB.series[name1] = score1;
-seriesDB.series[name2] = score2;
+if (seriesDB.count < 5) {
+    console.log("You watched less than 5 movies");
+} else if (seriesDB.count >= 5 && seriesDB.count <= 10) {
+    console.log("You watched more than 5 movies");
+}  else if (seriesDB.count >= 10){
+    console.log("You watched more than 10 movies");
+}   else {
+    console.log('error!');
+}
+
 
 console.log(seriesDB);
 
