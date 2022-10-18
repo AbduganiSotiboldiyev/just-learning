@@ -71,3 +71,57 @@
 //     }
 //     console.log(i);
 // }
+
+
+// function
+// --------------------------------------
+
+// function declaration 
+
+// function sumAandB(a , b) {
+//     return a + b;
+// }
+// document.getElementById('demo').innerHTML = sumAandB(5,6);
+// console.log(sumAandB(10,6));
+
+
+// function expression
+
+// const calca = function(a,b) {
+//     return a + b;
+// };
+
+// document.getElementById('demo').innerHTML = calca(6,6);
+// console.log(calca(6,6));
+
+// Arrow functions
+
+// const calca = (a,b) => {
+//     return a + b;
+// };
+
+// document.getElementById('demo').innerHTML = calca(6,9);
+// console.log(calca(10,5));
+
+
+// ----------------------------------
+//  methods
+// ----------------------------------
+
+// const user = "Abdugani";
+// const arr = [1,2,3,4];
+
+// const userUpper = user.toUpperCase();
+// const userLower  = user.toLowerCase();
+// console.log(userUpper, userLower);
+
+// console.log(user.indexOf("g"));
+// console.log(user.slice(user.indexOf("g"), user.length + 1));  
+
+// const num = 5.8;
+// console.log(Math.round(num));
+// const  borderWidth = "25.8px";
+
+// console.log(parseInt(borderWidth));
+// console.log(parseFloat(borderWidth));
+ 
