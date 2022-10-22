@@ -25,4 +25,16 @@ prompt("question"," ") - have  answer to questions
 						Interpolatsiya
 
 ` ` -shunday qo'shtirnoqlar orqali hosil qilinadi.It helps to use variables inside brikets ` smth ${ variablename } `
-												
+											
+											Array method
+arr.push() 
+arr.unshift()
+arr.pop()
+arr.shift()
+for( let value of arr) 
+for (let value in arr)
+arr.forEach(function( value, index, arr) {
+	console.log(`${index} : ${value} into arr ${arr} `)
+})
+arr.sort() 
+arr.sort((a,b) => a-b )

@@ -123,5 +123,103 @@
 // const  borderWidth = "25.8px";
 
 // console.log(parseInt(borderWidth));
-// console.log(parseFloat(borderWidth));
+// console.log(parseFloat(borderWidth));\
+
+
+//  Call back function
+
+// function  first(cb) {
+//     setTimeout(() => {
+//         console.log(1);
+//         cb();
+//     },1000);
+    
+// }
+
+// function  second() {
+//     console.log(2);
+// }
+
+// first(second);
+
+// const edu = (subjuct, callback) => {
+//     console.log(`I want to teach ${subjuct}`);
+//     callback();
+// };
+
+// function done() {
+//     console.log("That's great!");
+// }
+
+// edu('JavaScript', done );   
+
+// edu('JavaScript', function () { console.log("That's great")});
+
  
+// Obyektlar destruptatziya
+
+// const school = {
+//     nameOF: "genius",
+//     adress: "shakhrikhon",
+//     tutionFee: "free",
+//     numOfStudent:2354,
+//     class : {
+//         beginner: "6 to 10 ",
+//         middle: "11 to 14",
+//         senior : "15 to 16",
+//     },
+//     gratitude: function () {
+//         console.log("Study hard and you can gratitude that school on your own!" );
+//     } 
+// };
+
+
+// // getting key through key method
+
+// const informAboutSchool = function (cb) {
+//     for (let key in school) {
+//     if (typeof school[key] === "object") {
+//         for (let i in school[key]) {
+//             console.log(`we offer your child ${i} class: ${school[key][i]} `);     
+//         }
+//     }   else if(typeof school[key] === "function") {
+//         school[key]();
+//     } else {
+//         console.log(school[key]);
+//     }
+    
+//     }
+//     setTimeout(() => {
+//         console.log(1);
+//         cb();
+//     } ,1000); 
+   
+// };
+
+// function cb() {
+//     console.log("cancelled");
+// }
+
+// informAboutSchool(cb);
+
+
+// arrays 
+
+// const arr = [1,19,22,31,4,5];
+// arr.sort((a,b) => a-b); 
+// for (let value of arr) { 
+//     console.log(value);
+// }
+
+// arr.forEach(function (item,index,array ){
+//     console.log(`${index}: ${item} into ${array}`);
+// });
+
+
+
+
+
+
+
+
+
