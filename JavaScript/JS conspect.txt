@@ -38,3 +38,6 @@ arr.forEach(function( value, index, arr) {
 })
 arr.sort() 
 arr.sort((a,b) => a-b )
+
+                                          Clonlash(nusxa olish),ES6
+
