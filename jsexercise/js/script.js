@@ -363,31 +363,31 @@
 
 // OOP(object orient program ) asoslari, prototipga yo'naltirilgan meros
 
-const car = {
-  motor : 'X',
-  color : "red",
-  isAirbag : true,
-  isSpeed: function() {
-    console.log(320);
-  }
-};
+// const car = {
+//   motor : 'X',
+//   color : "red",
+//   isAirbag : true,
+//   isSpeed: function() {
+//     console.log(320);
+//   }
+// };
 
-const gm = {
-  isAirbag:false,
-};
+// const gm = {
+//   isAirbag:false,
+// };
 
-// connecting to main object
-// 1st way is too old method so it'd not be necessary
-// gm.__proto__ = car;
-// console.log(gm);
+// // connecting to main object
+// // 1st way is too old method so it'd not be necessary
+// // gm.__proto__ = car;
+// // console.log(gm);
 
-//  2nd way is better to set prototype
-// Object.setPrototypeOf(gm,car);
-// console.log(gm);
+// //  2nd way is better to set prototype
+// // Object.setPrototypeOf(gm,car);
+// // console.log(gm);
 
-// setting prototype to empty object
-const bmw = Object.create(car);
-console.log(bmw);
+// // setting prototype to empty object
+// // const bmw = Object.create(car);
+// // console.log(bmw);
 
 
 
