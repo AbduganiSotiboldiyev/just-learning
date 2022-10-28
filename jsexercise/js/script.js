@@ -1,4 +1,5 @@
-"use strict"
+'use strict';
+
 // working with users
 // const place = confirm("Are you here?");
 // console.log(`here right? ${place}`)
@@ -328,14 +329,65 @@
 // console.log(numbers);
 // console.log(arr);
 
+// SPREAD METHOD
+// this method helps to copy/mix arrays ,objects and functions into new one, or convert them into massive
+
+// const arr1 = ['alex', 'alex1'];
+// const arr2 = ['alex3', 'alex2'];
+
+// const mixAll = [...arr1, ...arr2];
+// console.log(mixAll);
+
+// const  calc = [1,2,3];
+
+// function adding(x,y,z) {
+//   console.log(x+y+z);
+
+// }
+
+// adding(...calc);
+
+// const obj = {
+//   x:5,
+//   y:10,
+//   z: {
+//     a: 8,
+// }
+// };
+
+// const newObj = {...obj,};
+// newObj.x =16;
+// console.log(newObj);
+// console.log(obj);
 
 
+// OOP(object orient program ) asoslari, prototipga yo'naltirilgan meros
 
+const car = {
+  motor : 'X',
+  color : "red",
+  isAirbag : true,
+  isSpeed: function() {
+    console.log(320);
+  }
+};
 
+const gm = {
+  isAirbag:false,
+};
 
+// connecting to main object
+// 1st way is too old method so it'd not be necessary
+// gm.__proto__ = car;
+// console.log(gm);
 
+//  2nd way is better to set prototype
+// Object.setPrototypeOf(gm,car);
+// console.log(gm);
 
-
+// setting prototype to empty object
+const bmw = Object.create(car);
+console.log(bmw);
 
 
 
