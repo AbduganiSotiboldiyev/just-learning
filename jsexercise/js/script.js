@@ -253,15 +253,15 @@
 // newNumbers.x =15;
 // console.log(newNumbers);
 
-// 2-way object cloning with using for method and some funcyion
-const numbers = {
-    x : 5,
-    y :10,
-    z : {
-        a: 8,
-        b : 3,
-    }
-};
+// 2-way of nested object cloning with using for method and  function
+// const numbers = {
+//     x : 5,
+//     y :10,
+//     z : {
+//         a: 8,
+//         b : 3,
+//     }
+// };
 
 // for (let key in numbers) {
 //   if (typeof numbers[key] === 'object') {
@@ -274,31 +274,59 @@ const numbers = {
 // }
 
 
-const objOf = (obj) => {
-  const objectOfCopy = {};
-  for (let key in obj) {
-    if (typeof obj[key] === 'object') {
-      const objOfObj = (obj2) =>{
-        const objectOfCopy2 = {}; 
-        for (let i in obj2) {
-          objectOfCopy2[i] = obj2[i];
-        } 
-        objectOfCopy[key] = objectOfCopy2;
-      };
-      objOfObj(obj[key]);
-    } else {
-          objectOfCopy[key] = obj[key];
-      }
-  } 
-  return objectOfCopy;
+// const objOf = (obj) => {
+//   const objectOfCopy = {};
+//   for (let key in obj) {
+//     if (typeof obj[key] === 'object') {
+//       const objOfObj = (obj2) =>{
+//         const objectOfCopy2 = {}; 
+//         for (let i in obj2) {
+//           objectOfCopy2[i] = obj2[i];
+//         } 
+//         objectOfCopy[key] = objectOfCopy2;
+//       };
+//       objOfObj(obj[key]);
+//     } else {
+//           objectOfCopy[key] = obj[key];
+//       }
+//   } 
+//   return objectOfCopy;
   
-};
+// };
 
-const newNumbers = objOf(numbers);
-newNumbers.z.a = 0;
+// const newNumbers = objOf(numbers);
+// newNumbers.z.a = 0;
 
-console.log(newNumbers);
-console.log(numbers);
+// console.log(newNumbers);
+// console.log(numbers);
+
+
+// Array cloning
+// 1st way of array cloning
+// const arr = [1,2,3,4];
+
+// const newArr = arr.slice();
+
+// newArr[2] = 'alex';
+// console.log(newArr);
+
+// 2-way of array cloning with for method and function
+
+// const arr = [1,2,3,4];
+
+
+// const newArr = (ar) => {
+//   const newArray = [];
+//   for (let i in ar) {
+//     newArray[i] = ar[i];
+//   }
+//   return newArray;
+// };
+
+// const numbers = newArr(arr);
+// numbers[2] = 'alex';
+// console.log(numbers);
+// console.log(arr);
 
 
 
