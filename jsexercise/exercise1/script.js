@@ -92,16 +92,7 @@ console.log(seriesDb.check());
 console.log(seriesDb.writeGenres());
 console.log (seriesDb);
 
-//    let i =0;
-//         while (i <3) {
-//             let savol = prompt(`${i+1}- your favorite type of movie`);
-//             while ( savol == '' || savol == null){
-//                 alert('that is too important');
-//                 savol =prompt(`${i+1}- your favorite type of movie`);
-//             } 
-//             this.genres[i] = savol;
-//             i++;
-//         }
+
 
 
 
