@@ -156,9 +156,13 @@
 
 // edu('JavaScript', function () { console.log("That's great")});
 
+
+
 //  ---------------------------------------
 // Obyektlar destruptatziya
 // ----------------------------------------
+
+
 // const school = {
 //     nameOF: "genius",
 //     adress: "shakhrikhon",
@@ -174,9 +178,12 @@
 //     } 
 // };
 
+
 // ----------------------------------
 // // getting key through key method
 // --------------------------------
+
+
 // const informAboutSchool = function (cb) {
 //     for (let key in school) {
 //     if (typeof school[key] === "object") {
@@ -206,6 +213,7 @@
 // -------------------------------
 // Arrays 
 // -------------------------------
+
 // const arr = [1,19,22,31,4,5];
 // // writing sort methods problem figuring out with   callback function wit
 // function help(a ,b) {
@@ -224,8 +232,10 @@
 //     console.log(`${index}: ${item} into ${array}`);
 // });
 
-
+// ----------------------------------------------------------------
 //  CLONE(nusxa olish), ES6
+// ----------------------------------------------------------------
+
 
 // massive cloning
 
@@ -360,8 +370,9 @@
 // console.log(newObj);
 // console.log(obj);
 
-
+// ----------------------------------------------------------------
 // OOP(object orient program ) asoslari, prototipga yo'naltirilgan meros
+// ----------------------------------------------------------------
 
 // const car = {
 //   motor : 'X',
