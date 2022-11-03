@@ -25,7 +25,7 @@ const  seriesDb = {
     },
     askingDb : function() {
         for (let i = 0; i < 2; i++) {
-            let  name1 = prompt("What is the name of movie that has been watched? " ),
+            let  name1 = prompt("What is the name of movie that you have watched? " ),
                 score1 = +prompt(" How do you like it?" , '10 out of ?');
             while ( isNaN(score1) ){
                     alert('Only numbers are allowed')

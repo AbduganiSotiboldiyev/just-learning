@@ -1,0 +1,70 @@
+@use "../abstract/variables";
+@use "../abstract/mixin";
+@use "../abstract/functtion";
+
+
+.container {
+    position: relative;
+    padding: 10% 40%;
+    width: 22rem;
+    justify-content: center;
+
+    &_box{
+        position: relative;
+        left:17%;
+        height: 220px;
+        width: 220px;
+        background-color: blue;
+        border-radius: 4px;
+        box-shadow: functtion.$shadow;
+
+    }
+
+    &_buttons {
+        display: flex;
+        margin-top:1.5rem;
+        justify-content: space-between;
+        align-items: center;
+        button {
+            position: relative;
+            padding: 13px 26px;
+            border-radius: 4px ;
+            border: 0;
+            cursor: pointer;
+            color: white;
+            background-color: variables.$grey;
+            box-shadow: functtion.$shadow;
+        }
+        
+    }
+    &_circles{
+        display:flex;
+        margin-top: 1.5rem;
+        justify-content: space-between;
+        align-items: center;
+        &_circle{
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 20px 25px;
+            border-radius: 50%;
+            color: white;
+            background-color: variables.$lightgrey;
+            box-shadow: functtion.$shadow;
+        }
+    }
+
+    &_hearts {
+        display: flex;
+        position: relative;
+        top: 1.5rem;
+        justify-content: space-around;
+        align-items: center;
+
+        &_heart {
+            img {
+                width: 84px;
+            }
+        }
+    }
+}

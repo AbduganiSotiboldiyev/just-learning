@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  padding: 10% 40%;
+  width: 22rem;
+  justify-content: center;
+}
+.container_box {
+  position: relative;
+  left: 17%;
+  height: 220px;
+  width: 220px;
+  background-color: blue;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 1px rgb(38, 42, 49);
+}
+.container_buttons {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.container_buttons button {
+  position: relative;
+  padding: 13px 26px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(38, 42, 49);
+  box-shadow: 0px 8px 16px 1px rgb(38, 42, 49);
+}
+.container_circles {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.container_circles_circle {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 20px 25px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(86, 114, 163);
+  box-shadow: 0px 8px 16px 1px rgb(38, 42, 49);
+}
+.container_hearts {
+  display: flex;
+  position: relative;
+  top: 1.5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.container_hearts_heart img {
+  width: 84px;
+}/*# sourceMappingURL=style.css.map */
