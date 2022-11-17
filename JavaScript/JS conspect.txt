@@ -41,3 +41,22 @@ arr.sort((a,b) => a-b )
 
                                           Clonlash(nusxa olish),ES6
 
+
+
+
+										  defer and async va dinamic script metodlari
+defer bu dom elementlari ishga tushishini kutib keyin script elementlarnini ishga tushirish uchun
+async bu script elementlarini qaysi biri tezroq ishga tushsa o'shanisini ishga tushirish uchun 
+dinamic  script yordamiga script kod ichida dinamic tarzda yana bir necha script ko'd qo'shish imkonini beradi quyidagi misol
+	const script = document.createElement('script');
+	script.src = 'js/secondscript.js';
+	document.body.append(script);
+yoki funksiya yordamida ham qilsak bo'ladi
+function loadScript(scriptNew,src) {
+	const scriptNew = document.createElement('script');
+	scriptNew = src
+	document.body.append(scriptNew)
+}
+
+loadScript(secondscript,'js/second.js');
+funksiya yordamida istalgancha script yarish mumkin faqatgina uni chaqirish orqali 

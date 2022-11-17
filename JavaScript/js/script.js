@@ -274,15 +274,15 @@
 //     }
 // };
 
-// for (let key in numbers) {
-//   if (typeof numbers[key] === 'object') {
-//     for (let i in numbers[key]) {
-//       console.log(numbers[key][i]);
-//     }
-//   } else {
-//     console.log(numbers[key]);
-//   }
-// }
+// // for (let key in numbers) {
+// //   if (typeof numbers[key] === 'object') {
+// //     for (let i in numbers[key]) {
+// //       console.log(numbers[key][i]);
+// //     }
+// //   } else {
+// //     console.log(numbers[key]);
+// //   }
+// // }
 
 
 // const objOf = (obj) => {
@@ -307,6 +307,7 @@
 
 // const newNumbers = objOf(numbers);
 // newNumbers.z.a = 0;
+// newNumbers.z.b= 58;
 
 // console.log(newNumbers);
 // console.log(numbers);
@@ -367,6 +368,7 @@
 
 // const newObj = {...obj,};
 // newObj.x =16;
+// newObj.z.a = 66;
 // console.log(newObj);
 // console.log(obj);
 
@@ -403,5 +405,48 @@
 
 
 
+// working with dates
 
+// let stert = new Date();
+
+// for (let i = 0; i < 10000000000; i++) {
+//     let some = i ** 3 ;
+// }
+// let end = new Date();
+ 
+// alert(`loop competed in ${(end.getTime() - stert.getTime())/1000} seconds`);
+// console.log(stert.getTime());
+// console.log(end.getTime());
+
+// ----------------------------
+
+
+//constructor function ----------------
+
+function Car(name,color,mhp) {
+    this.name = name;
+    this.color = color;
+    this.mhp = mhp;
+    this.isAirbag = true;
+    this.speed = function () {
+        console.log(`speed of ${this.name} is ${this.mhp} km/hours`);
+    };
+}
+
+const bmw = new Car('bmw', 'red' , 360);
+const mersedes = new Car('mersedes', 'green' ,320);
+
+
+mersedes.speed();
+bmw.speed();
+
+Car.prototype.cost = function () {
+    console.log(`cost of  ${this.name} starts at 50$  `);
+};
+
+const audi = Object.assign({}, bmw);
+audi.name = 'audi';
+console.log(mersedes);
+console.log(bmw);
+console.log(audi);
 

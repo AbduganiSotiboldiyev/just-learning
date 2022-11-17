@@ -1,0 +1,25 @@
+.background{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height: 20vh;
+    background-color: aqua;
+}
+.car{
+    position: absolute;
+    top:13vh;
+    width:120px;
+    left:0;
+}
+.btn {
+    position: relative;
+    padding: 15px 30px;
+    background-color:blueviolet;
+    top:5vh;
+    left: 45%;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+    color: white;
+    text-transform: capitalize;
+}
